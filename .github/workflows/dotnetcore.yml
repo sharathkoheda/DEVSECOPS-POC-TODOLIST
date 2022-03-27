@@ -19,3 +19,8 @@ jobs:
       run: dotnet build --configuration Release
     - name: Publish build
       run: dotnet publish -o artifacts
+    - name: Upload WebApp1 Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+       name: DEVSECOPS-ARTIFACT
+       path: /home/runner/work/DEVSECOPS-POC-TODOLIST/DEVSECOPS-POC-TODOLIST/TodoList.UnitTests/artifacts/
