@@ -17,3 +17,5 @@ jobs:
       run: dotnet restore
     - name: Build with dotnet
       run: dotnet build --configuration Release
+    - name: Publish build
+       run: dotnet publish -o artifacts
